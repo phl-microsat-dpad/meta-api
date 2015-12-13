@@ -1,0 +1,10 @@
+node_modules
+.settings
+.project
+.DS_Store
+.*.swp
+*.log
+*.pyc
+dist
+.env
+docs_tmp

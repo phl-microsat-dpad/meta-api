@@ -1,0 +1,69 @@
+{
+  "name": "landsat-api",
+  "version": "1.1.0",
+  "description": "An API for USGS Landsat8 imagery metadata",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js",
+    "test": "./node_modules/mocha/bin/mocha test && npm run docs",
+    "docs": "./node_modules/apidoc/bin/apidoc -i app/ -o docs_tmp/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developmentseed/landsat-api.git"
+  },
+  "keywords": [
+    "landsat",
+    "api",
+    "elasticsearch"
+  ],
+  "author": "Development Seed",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/developmentseed/landsat-api/issues"
+  },
+  "homepage": "https://github.com/developmentseed/landsat-api#readme",
+  "dependencies": {
+    "async": "^1.4.0",
+    "boolify-string": "^2.0.1",
+    "boom": "^2.7.2",
+    "catbox-redis": "^1.0.5",
+    "csv": "^0.4.2",
+    "elastic.js": "^1.2.0",
+    "elasticsearch": "^8.2.0",
+    "envloader": "0.0.2",
+    "geojson-validation": "^0.1.5",
+    "good": "6.3.0",
+    "good-console": "5.0.2",
+    "hapi": "9.3.0",
+    "hapi-mongodb": "3.0.0",
+    "hapi-paginate": "^0.2.0",
+    "hapi-response-meta": "^0.2.0",
+    "hapi-router": "^3.3.0",
+    "kerberos": "0.0.17",
+    "landsat-meta-updater": "^0.4.0",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.6",
+    "mongodb": "^2.0.42",
+    "monquery": "^0.2.0",
+    "nock": "^2.9.1",
+    "request": "^2.60.0",
+    "tmp": "0.0.27",
+    "turf-area": "^1.1.1",
+    "turf-extent": "^1.0.4",
+    "validator": "^4.0.5"
+  },
+  "devDependencies": {
+    "apidoc": "^0.13.1",
+    "chai": "^3.2.0",
+    "fs-extra": "^0.22.1",
+    "mocha": "^2.2.5"
+  },
+  "apidoc": {
+    "title": "landsat-api",
+    "header": {
+      "title": "Installation",
+      "filename": "README.md"
+    }
+  }
+}
